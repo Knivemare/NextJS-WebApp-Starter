@@ -1,12 +1,14 @@
 # NextJS WebApp Starter
 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 ## Install
 
 ```bash
 npx create-next-app [Your AppName] -e https://github.com/Knivemare/NextJS-WebApp-Starter
+# or
+yarn create-next-app [Your AppName] -e https://github.com/Knivemare/NextJS-WebApp-Starter
 ```
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Additional Packages
 - Sass
