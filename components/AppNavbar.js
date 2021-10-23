@@ -1,9 +1,12 @@
 // Import Modules
 
+// Import Styles
+import styles from '../styles/components/AppNavbar.module.scss'
+
 // Content
 export default function AppNavbar() {
     return (
-        <header>
+        <header className={styles.Navbar}>
 
         </header>
     )
