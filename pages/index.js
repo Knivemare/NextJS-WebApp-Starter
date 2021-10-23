@@ -1,7 +1,7 @@
 // Import Modules
 import Image from 'next/image'
 // Import Styles
-import styles from '../styles/pages/Home.module.scss'
+import styles from '../styles/pages/Index.module.scss'
 
 export default function Home() {
   return (
