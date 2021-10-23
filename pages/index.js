@@ -1,11 +1,29 @@
 // Import Modules
 import Image from 'next/image'
+// Import Auth0
+import { useUser } from '@auth0/nextjs-auth0';
 // Import Styles
 import styles from '../styles/pages/Index.module.scss'
 
 export default function Home() {
+  const { user, error } = useUser();
+  if (error) return <div>{error.message}</div>;
+
+  let button;
+  if (user) {
+    button = <h1>Welcome {user.name}! <a href="/api/auth/logout">Logout</a></h1>;
+  } else {
+    button = <h1>Neu hier? -> <a href="/api/auth/login">Login</a></h1>;
+  }
+
   return (
     <div className={styles.container}>
+
+      <div>
+        {button}
+      </div>
+
+       <a href="/api/auth/login">Login</a>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
