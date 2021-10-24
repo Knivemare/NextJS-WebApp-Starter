@@ -3,7 +3,7 @@ import Image from 'next/image'
 // Import Auth0
 import { useUser } from '@auth0/nextjs-auth0';
 // Import Styles
-import styles from '../styles/pages/Index.module.scss'
+import styles from 'styles/pages/Index.module.scss'
 
 export default function Home() {
   const { user, error } = useUser();
