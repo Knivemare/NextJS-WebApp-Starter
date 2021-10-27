@@ -3,6 +3,8 @@
   --AppNavbarHeight: 60px;
   --AppNavbarBackgroundDark: #202020;
   --AppNavbarBackgroundLight: #fff;
+
+  --ThemeColor: green;
 }
 
 html, body {
@@ -17,6 +19,47 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 15px;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4, h5, h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0 0 15px;
+}
+
 * {
   box-sizing: border-box;
+}
+
+// Content
+.Content {
+  padding: 30px 0;
+}
+
+button {
+  padding: 5px 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+  border: 1px solid var(--ThemeColor);
+  color: var(--ThemeColor);
+  background: #fff;
+  &:hover {
+    cursor: pointer;
+  }
 }

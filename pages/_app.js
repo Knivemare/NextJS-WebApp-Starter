@@ -12,7 +12,9 @@ function MyApp({ Component, pageProps }) {
     <UserProvider>
       <AppMetaTags/>
       <AppNavbar/>
-      <Component {...pageProps} />
+      <main class="Content">
+        <Component {...pageProps} />
+      </main>
       <AppFooter/>
     </UserProvider>
   )
