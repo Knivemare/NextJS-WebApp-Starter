@@ -1,6 +1,13 @@
 // Import Modules
 import Head from 'next/head'
 
+PageMetaTags.defaultProps = {
+    Title: "Jawny.de | Website",
+    Description: "Willkommen auf der Website Jawny.de",
+    Robots: "index, follow", 
+    Canonical: "/" 
+}
+
 // Content
 export default function PageMetaTags(props) {
     return (
