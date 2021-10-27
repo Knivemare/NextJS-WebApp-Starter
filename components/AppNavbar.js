@@ -1,4 +1,5 @@
 // Import Modules
+import Link from 'next/link'
 import { useUser } from '@auth0/nextjs-auth0';
 // Import Styles
 import styles from '../styles/components/AppNavbar.module.scss'
@@ -30,13 +31,13 @@ export default function AppNavbar() {
         );
     } else {
         UserItem = (
-            <a href="/api/auth/login" className={styles.NavItem}>
+            <Link href="/api/auth/login" className={styles.NavItem}><a>
                 <img className={styles.ProfilePic}
                     src="https://images.unsplash.com/photo-1612562588694-c4505dc3d031?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80"
                 />
                 Login<br/>
                 Registrieren
-            </a>
+            </a></Link>
         )
     }
 
