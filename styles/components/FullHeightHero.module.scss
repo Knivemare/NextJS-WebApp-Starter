@@ -1,0 +1,10 @@
+.Hero {
+    min-height: calc(100vh - (2 * var(--AppContentPadding)) - var(--AppNavbarHeight));
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    & > * {
+        text-align: center;
+    }
+}

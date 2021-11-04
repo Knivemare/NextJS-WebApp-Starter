@@ -1,15 +1,17 @@
 // Import Modules & Components
 import PageMetaTags from 'components/PageMetaTags';
-import PageHeading from 'components/PageHeading'
-import Container from 'components/Container';
+import FullHeightHero from 'components/FullHeightHero';
 // Import Styles
 import styles from 'styles/pages/Index.module.scss'
 
 export default function Home() {
   return (
-    <Container>
+    <>
       <PageMetaTags/>
-      <PageHeading/>
-    </Container>
+      <FullHeightHero
+        heading="WebApp Starter"
+        text="🔥 For your next awesome NextJS project! 🔥"
+      />
+    </>
   )
 }

@@ -23,7 +23,7 @@ export default function AppNavbar() {
         UserItem = (
             <div className={styles.UserItem}>
                 <img className={styles.ProfilePic}
-                    src="https://images.unsplash.com/photo-1612562588694-c4505dc3d031?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80"
+                    src="https://images.unsplash.com/photo-1612562588694-c4505dc3d031?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
                 />
                 Hi 👋🏼<br/>
                 Knivemare
@@ -33,7 +33,7 @@ export default function AppNavbar() {
         UserItem = (
             <Link href="/api/auth/login"><a className={styles.UserItem}>
                 <img className={styles.ProfilePic}
-                    src="https://images.unsplash.com/photo-1612562588694-c4505dc3d031?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=50&h=50&q=80"
+                    src="https://images.unsplash.com/photo-1612562588694-c4505dc3d031?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
                 />
                 Login<br/>
                 Registrieren
@@ -46,7 +46,6 @@ export default function AppNavbar() {
         <header className={styles.Navbar}>
             <div className={styles.Logo}></div>
             <nav className={styles.Nav}>
-                <NavItem/>
                 {UserItem}
             </nav>
         </header>
