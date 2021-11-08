@@ -16,7 +16,7 @@ export default function PageMetaTags(props) {
             <title>{props.Title}</title>
             <meta name="description" content={props.Description}/>
             <meta name="robots" content={props.Robots}/>
-            <link rel="canonical" href={props.Canonical}/>
+            <link rel="canonical" href={[process.env.NEXT_PUBLIC_WEBAPP_HOSTNAME, props.Canonical].join('')}/>
 
             {/* Facebook MetaTags */}
             <meta property="og:title" content={props.Title}/>

@@ -9,8 +9,8 @@ export default function Privacy() {
         <>
             <PageMetaTags/>
             <FullHeightHero
-                heading="Datenschutz"
-                text="Hier entstaht die Datenschutzerklärung dieser Website!"
+                heading="🕵🏽‍♂️ Privacy 🕵🏼‍♀️"
+                text="Discribe your privacy settings as transparent als possible!"
             />
         </>
     )

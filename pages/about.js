@@ -9,8 +9,8 @@ export default function Imprint() {
         <>
             <PageMetaTags/>
             <FullHeightHero
-                heading="🧑🏽‍⚖️ Imprint 👩🏼‍⚖️"
-                text="Hier entstaht das Impressum dieser Website!"
+                heading="🙋🏽‍♂️ About us 🙋🏽‍♀️"
+                text="Let your customers know who you are!"
             />
         </>
     )
